@@ -774,366 +774,256 @@ nav {
 
 @media (max-width: 480px) {
 
-    @media (max-width: 480px) {
-    /* Контейнер */
-    .container {
-        padding: 0 15px;
+    body {
+        margin-left: -30px;
+        margin-top: 30px;
     }
 
-    /* Header */
-    header {
-        flex-direction: column;
-        height: auto;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-
-    .logo img {
+    header .logo img {
         width: 150px;
-        margin: 0 auto;
-        display: block;
     }
 
-    .nav {
-        width: 100%;
-        text-align: center;
+    header .nav {
+        width: 500px;
+        margin-left: 50px;
+        margin-top: 50px;
     }
 
     header .nav a {
-        font-size: 14px;
-        margin: 0 8px;
-        display: inline-block;
+        font-size: 17px;
     }
 
     #header-button {
-        padding: 8px 15px;
-        font-size: 14px;
-        width: auto;
-        position: static;
-        bottom: auto;
-        left: auto;
-        margin-top: 10px;
-        display: inline-block;
-    }
-
-    /* Hero */
-    .hero {
-        flex-direction: column;
-        margin-top: 30px;
+        position: relative;
+        width: 200px;
+        padding: 10px;
+        bottom: 90px;
+        left: 200px;
+        text-align: center;
     }
 
     .hero .text {
         width: 100%;
-        order: 1;
     }
 
     .hero .text h1 {
-        font-size: 28px;
+        font-size: 35px;
+        margin-top: 250px;
         width: 100%;
-        margin-top: 0;
     }
 
     .hero .text p {
-        font-size: 16px;
-        margin-top: 15px;
+        margin-top: 15px
     }
 
     #hero-button {
-        width: 220px;
-        height: 50px;
-        font-size: 14px;
+        width: 250px;
         margin-top: 20px;
-        padding: 12px;
     }
 
     .hero img {
-        width: 80%;
-        max-width: 280px;
-        position: static;
-        right: auto;
-        bottom: auto;
-        margin: 20px auto;
-        display: block;
-    }
-
-    /* Brands */
-    .brands img {
         width: 100%;
-        margin-top: 40px;
+        max-width: 300px;
+        position: relative;
+        right: 350px;
+        bottom: 40px;
     }
 
-    /* Entry */
+    .brands {
+        width: 100%;
+    }
+
     .entry {
         flex-direction: column;
         gap: 20px;
-        margin-top: 60px;
-        text-align: center;
     }
 
     .entry h2 {
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        font-size: 24px;
+        display: inline-flex;
+        justify-content: center;
     }
 
     .entry p {
-        font-size: 16px;
-        position: static;
+        font-size: 18px;
+        position: relative;
     }
 
-    /* Services blocks */
+    .services {
+        margin-right: -40px;
+    }
+
     .blocks-services {
-        gap: 20px;
-        justify-content: center;
-        margin-top: 40px;
+        gap: 10px;
+        margin-right: 0;
+        column-gap: 10px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 100%;
-        max-width: 300px;
-        height: 280px;
-        margin: 0 auto;
+        width: 185px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 20px;
-        position: absolute;
-        top: 30px;
-        left: 20px;
-        right: auto;
-        bottom: auto;
+        font-size: 23px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        width: 90px;
-        position: absolute;
-        top: auto;
-        right: 20px;
-        bottom: 20px;
-        left: auto;
-        margin: 0;
+        margin-top: 70px;
+        margin-left: -130px;
+        width: 100px;
     }
 
-    .line-and-btn {
-        margin-top: 190px;
-        margin-left: 20px;
-        margin-right: 0;
-        width: auto;
+    .blocks-services .line-and-btn img {
+        margin-left: -10px;
+        width: 30px;
     }
 
-    .line-and-btn img {
-        width: 24px;
-    }
-
-    .line-and-btn a {
-        font-size: 16px;
-    }
-
-    /* Invitation */
     .invitation {
         width: 100%;
         max-width: 400px;
         height: auto;
-        flex-direction: column;
-        padding: 30px 20px;
-        margin: 60px auto;
-    }
-
-    .invitation .text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .invitation h3 {
-        margin-left: 0;
-        margin-top: 0;
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .invitation p {
-        margin-left: 0;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .invitation .text a {
-        margin-left: 0;
-        width: 250px;
-        height: 50px;
-        font-size: 16px;
-        padding: 12px;
-        margin: 10px auto;
-        display: inline-flex;
-    }
-
-    .invitation .img {
-        width: 150px;
-        margin: 20px auto 0;
     }
 
     .invitation img {
-        width: 100%;
-        position: static;
-        right: auto;
-        top: auto;
+        width: 130px;
+        position: relative;
+        right: 60px;
+        top: 15px;
+
     }
 
-    /* Cases */
+    .invitation h3 {
+        font-size: 24px;
+    }
+
+    .invitation p {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .invitation .text a {
+        font-size: 17px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
     .entry-cases {
         flex-direction: column;
-        gap: 15px;
-        margin-top: 60px;
-        text-align: center;
+        gap: 10px;
     }
 
     .entry-cases h2 {
         width: auto;
-        display: inline-block;
-        margin: 0 auto;
-        font-size: 22px;
+    }
+
+    .case .entry-cases h2 {
+        margin-top: -50px;
+        width: 200px;
+        margin-left: -170px;
     }
 
     .entry-cases p {
-        font-size: 16px;
-        position: static;
+        position: relative;
+        top: 10px;
     }
 
     .cases {
         width: 100%;
-        max-width: 400px;
-        height: auto;
         flex-direction: column;
-        margin: 40px auto;
-        padding: 20px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
     }
 
-    .one-case,
-    .two-case,
-    .three-case {
-        width: 100% !important;
-        margin: 20px 0 !important;
-        height: auto;
-        text-align: center;
+    .case :is(.one-case, .two-case, .three-case) p {
+        font-size: 17px;
+        width: 300px;
+        height: 100px;
+        margin-top: -40px;
+
+    }
+
+    .case :is(.one-case, .two-case, .three-case) {
+        margin-left: -50px;
+        margin-bottom: -30px;
+    }
+
+    .case :is(.three-case) {
+        margin-bottom: -100px;
+    }
+
+    .case :is(.two-case, .three-case) p {
+        margin-top: -70px;
+    }
+
+
+    .case :is(.three-case) p {
+        margin-top: -100px;
+    }
+
+
+    .case :is(.one-case, .two-case, .three-case) a {
+        top: 38px;
     }
 
     .one-case::after,
     .two-case::after {
-        display: none;
+        height: 1px;
+        width: 300px;
+        top: 110px;
+        left: 5px;
     }
 
-    .case :is(.one-case, .two-case, .three-case) p {
-        font-size: 15px;
-        width: 100%;
-        height: auto;
-        margin: 0 0 15px;
+    .two-case::after {
+        margin-top: -30px;
     }
 
-    .case :is(.one-case, .two-case, .three-case) a {
-        position: static;
-        font-size: 16px;
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-    /* Form */
     .form {
         width: 100%;
         max-width: 400px;
-        height: auto;
-        flex-direction: column;
-        padding: 30px 20px;
-        margin: 60px auto;
-        text-align: center;
-    }
-
-    .form h3 {
-        font-size: 22px;
-        display: inline-block;
-        margin: 0 auto 20px;
-        width: auto;
-    }
-
-    #form {
-        width: 100%;
-        padding: 0;
     }
 
     #form input {
         width: 100%;
-        max-width: 280px;
-        height: 45px;
-        margin: 0 auto;
-        font-size: 14px;
+        max-width: 350px;
+        height: 40px;
     }
 
     #form input::placeholder {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .form-img {
-        display: none;
-    }
-
-    /* Footer */
-    footer {
-        flex-direction: column;
-        padding: 30px 20px;
-        margin-top: 60px;
-        text-align: center;
+    .form img {
+        position: relative;
+        right: 105px;
+        bottom: 250px;
+        width: 150px;
     }
 
     .footer-content {
-        width: 100%;
-        margin-left: 0;
+        margin-left: 30px;
     }
 
-    footer .description {
-        width: 100%;
-        margin-left: 0;
-    }
 
     footer .description img {
-        width: 130px;
-        margin: 0 auto 20px;
-        display: block;
+        width: 150px;
     }
 
-    footer .description h3 {
-        font-size: 18px;
+    .footer-content .description h3 {
+        font-size: 16px;
     }
 
-    footer .description p {
+    .footer-content .description p {
         width: 100%;
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    .footer-nav {
-        margin-top: 20px;
+    .footer-content .footer-nav a {
+        font-size: 17px;
     }
 
-    .footer-nav nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin: 20px 0;
+    footer .footer-img img {
+        width: 130px;
+        margin-left: -160px;
     }
 
-    .footer-nav a {
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .footer-img {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .footer-img img {
-        width: 100px;
-        margin: 0 auto;
-        display: block;
-    }
 }
