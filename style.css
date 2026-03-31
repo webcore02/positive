@@ -773,251 +773,44 @@ nav {
     }
 }
 
-@media only screen and (max-width: 480px) {
-
-    body {
-        margin-left: -30px;
-        margin-top: 30px;
-    }
-
-    header .logo img {
-        width: 150px;
-    }
-
-    header .nav {
-        width: 460px;
-        margin-left: 60px;
-        margin-top: 50px;
-    }
-
-    header .nav a {
-        font-size: 17px;
-    }
-
-    #header-button {
-        position: relative;
-        width: 200px;
-        padding: 10px;
-        bottom: 90px;
-        left: 200px;
-        text-align: center;
-    }
-
-    .hero .text h1 {
-        font-size: 35px;
-        margin-top: 250px;
-        width: 400px;
-    }
-
-    .hero .text p {
-        margin-top: 15px
-    }
-
-    #hero-button {
-        width: 250px;
-        margin-top: 20px;
-    }
-
-    .hero img {
-        width: 300px;
-        position: relative;
-        right: 350px;
-        bottom: 40px;
-    }
-
-    .brands {
-        width: 450px;
-        margin-left: -20px;
-    }
-
-    .entry {
+@media (max-width: 480px) {
+.container {
+padding: 40px 25px;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
 
-    .entry h2 {
-        display: inline-flex;
-        justify-content: center;
-    }
-
-    .entry p {
-        font-size: 18px;
-        position: relative;
-    }
-
-    .services {
-        margin-right: -40px;
-    }
-
-    .blocks-services {
-        gap: 10px;
-        margin-right: 0;
-        column-gap: 10px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 185px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 23px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        margin-top: 70px;
-        margin-left: -130px;
-        width: 100px;
-    }
-
-    .blocks-services .line-and-btn img {
-        margin-left: -10px;
-        width: 30px;
-    }
-
-    .invitation img {
-        width: 130px;
-        position: relative;
-        right: 60px;
-        top: 15px;
-
-    }
-
-    .invitation {
-        width: 400px;
-        height: auto;
-    }
-
-    .invitation h3 {
-        font-size: 24px;
-    }
-
-    .invitation p {
-        font-size: 17px;
-        margin-top: 10px;
-    }
-
-    .invitation .text a {
-        font-size: 17px;
-        width: 300px;
-        margin-bottom: 20px;
-    }
-
-    .entry-cases {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-
-    .case .entry-cases h2 {
-        margin-top: -50px;
-        width: 200px;
-        margin-left: -170px;
-    }
-
-    .entry-cases p {
-        position: relative;
-        top: 10px;
-    }
-
-    .cases {
-        width: 450px;
-        flex-direction: column;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-
-
-
-    }
-
-    .case :is(.one-case, .two-case, .three-case) p {
-        font-size: 17px;
-        width: 300px;
-        height: 100px;
-        margin-top: -40px;
-
-    }
-
-    .case :is(.one-case, .two-case, .three-case) {
-        margin-left: -50px;
-        margin-bottom: -30px;
-    }
-
-    .case :is(.three-case) {
-        margin-bottom: -100px;
-    }
-
-    .case :is(.two-case, .three-case) p {
-        margin-top: -70px;
-    }
-
-
-    .case :is(.three-case) p {
-        margin-top: -100px;
-    }
-
-
-    .case :is(.one-case, .two-case, .three-case) a {
-        top: 38px;
-    }
-
-    .one-case::after,
-    .two-case::after {
-        height: 1px;
-        width: 300px;
-        top: 110px;
-        left: 5px;
-    }
-
-    .two-case::after {
-        margin-top: -30px;
-    }
-
-    .form {
-        margin-top: 100px;
-        margin-left: -5px;
-        width: 400px;
+    #form {
+        width: 100%;
     }
 
     #form input {
-        height: 40px;
-    }
-
-    #form input::placeholder {
-        font-size: 16px;
-    }
-
-    .form img {
-        position: relative;
-        right: 105px;
-        bottom: 250px;
-        width: 150px;
-    }
-
-    .footer-content {
-        margin-left: 30px;
-    }
-
-
-    footer .description img {
-        width: 150px;
-    }
-
-    .footer-content .description h3 {
-        font-size: 16px;
-    }
-
-    .footer-content .description p {
-        font-size: 15px;
-    }
-
-    .footer-content .footer-nav a {
+        width: 100%;
+        height: 52px;
         font-size: 17px;
     }
 
-    footer .footer-img img {
-        width: 130px;
-        margin-left: -160px;
+    .form-img img {
+        position: static;
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
     }
 
+    /* Footer */
+    footer .description {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer-img img {
+        width: 140px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .footer-content {
+        margin-left: 0;
+    }
 }
