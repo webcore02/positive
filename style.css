@@ -515,8 +515,7 @@ nav {
 @media (max-width: 1024px) {
     .container {
         max-width: 1024px;
-        margin: 0 auto;
-        padding: 0 40px;
+        margin: 0 -40px;
     }
 
     header {
@@ -530,14 +529,15 @@ nav {
 
     .hero img {
         width: 500px;
+        margin-right: -100px;
     }
 
     .hero .text h1 {
         font-size: 50px;
     }
 
-    .brands img {
-        width: 100%;
+    .brands {
+        width: 900px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
@@ -549,12 +549,14 @@ nav {
         row-gap: 50px;
     }
 
+
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
         opacity: 70%;
         z-index: 1;
         width: 150px;
         left: 200px;
         bottom: 50px;
+
     }
 
     .invitation {
@@ -563,6 +565,7 @@ nav {
 
     .invitation img {
         width: 300px;
+        margin-left: -30px;
     }
 
     .invitation .text {
@@ -578,6 +581,7 @@ nav {
         width: 300px;
     }
 
+
     .entry-cases h2 {
         font-size: 20.5px;
         padding: 10px;
@@ -585,6 +589,7 @@ nav {
 
     .cases {
         width: 900px;
+        margin-left: -25px;
     }
 
     :is(.one-case, .two-case, .three-case) p {
@@ -595,24 +600,30 @@ nav {
 
     .form {
         width: 800px;
+        margin-left: 20px;
     }
 
     .footer-img {
         margin-top: 120px;
+        margin-left: -100px;
     }
+
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
+    .logo img {
+        margin-left: -10px;
+        margin-bottom: 30px;
+        width: 200px;
     }
 
-    .logo img {
-        width: 180px;
+    header nav {
+        margin-bottom: -30px;
+        margin-left: -260px;
     }
 
     header nav a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .hero .text h1 {
@@ -621,6 +632,8 @@ nav {
 
     .hero img {
         width: 350px;
+        margin-right: -40px;
+        margin-top: 30px;
     }
 
     .hero .text p {
@@ -632,8 +645,13 @@ nav {
         font-size: 20px;
     }
 
-    .brands img {
-        width: 100%;
+    .brands {
+        margin-left: -45px;
+        width: 750px;
+    }
+
+    .services {
+        margin-top: -70px;
     }
 
     .services .entry h2 {
@@ -649,399 +667,355 @@ nav {
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 24px;
-        left: 30px;
+        font-size: 30px;
+        margin-left: -25px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .line-and-btn {
-        margin-left: 30px;
-        margin-top: 210px;
+        margin-left: 20px;
+        margin-top: 240px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        width: 110px;
-        left: 150px;
+        margin-left: -100px;
+        margin-top: 60px;
+        width: 120px;
     }
 
     .invitation {
-        width: 100%;
-        max-width: 700px;
-        padding: 0 30px;
-    }
-
-    .invitation .text {
-        width: 45%;
-    }
-
-    .invitation .img {
-        width: 45%;
-        margin-left: 0;
-    }
-
-    .invitation img {
-        width: 100%;
+        width: 600px;
+        margin-right: 50px;
     }
 
     .invitation h3 {
-        font-size: 24px;
-        margin-left: 0;
+        margin-left: -20px;
     }
 
     .invitation p {
-        margin-left: 0;
-        font-size: 16px;
+        margin-left: -20px;
     }
 
     .invitation .text a {
-        margin-left: 0;
-        width: 100%;
-        max-width: 280px;
+        margin-left: -20px;
+        margin-top: 3px;
+    }
+
+    .invitation .img img {
+        margin-left: -70px;
     }
 
     .cases {
-        width: 100%;
-        max-width: 700px;
-        height: auto;
-        padding: 20px;
-    }
-
-    .one-case,
-    .two-case,
-    .three-case {
-        margin: 30px 20px;
-        width: calc(33.33% - 40px);
+        width: 700px;
+        padding-right: 40px;
     }
 
     .cases p {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .cases :is(.one-case, .two-case, .three-case) {
+        width: 200px;
+        margin: 10px;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+
+    .cases :is(.one-case, .two-case, .three-case) p {
+        margin-top: 5px;
+        margin-bottom: -25px;
     }
 
     .form {
-        width: 100%;
-        max-width: 700px;
-        height: auto;
-        padding: 30px;
+        width: 600px;
     }
 
-    .form-img {
+    .form h3 {
+        font-size: 25px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form #form-send {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form ::placeholder {
+        font-size: 16px;
+    }
+
+
+    .form img {
         width: 250px;
     }
 
+    .footer-content img {
+        width: 200px;
+    }
+
+    .footer-content .description h3 {
+        font-size: 20px;
+    }
+
     .footer-content .description p {
-        width: 300px;
+        width: 400px;
+    }
+
+    .footer-content nav {
+        font-size: 13px;
+    }
+
+    .footer-img {
+        margin-left: -270px;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
+
+    body {
+        margin-left: -30px;
+        margin-top: 30px;
     }
 
-    header {
-        flex-wrap: wrap;
-        gap: 15px;
-        height: auto;
-    }
-
-    .logo img {
+    header .logo img {
         width: 150px;
     }
 
-    .nav {
-        width: 100%;
-        text-align: center;
+    header .nav {
+        width: 500px;
+        margin-left: 50px;
+        margin-top: 50px;
     }
 
     header .nav a {
-        font-size: 14px;
-        margin: 0 8px;
+        font-size: 17px;
     }
 
     #header-button {
-        padding: 10px 15px;
-        font-size: 14px;
-        position: static;
-        width: auto;
-        bottom: auto;
-        left: auto;
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-    .hero {
-        flex-direction: column;
-    }
-
-    .hero .text {
-        width: 100%;
-        order: 1;
+        position: relative;
+        width: 200px;
+        padding: 10px;
+        bottom: 90px;
+        left: 200px;
+        text-align: center;
     }
 
     .hero .text h1 {
-        font-size: 28px;
-        margin-top: 0;
-        width: 100%;
+        font-size: 35px;
+        margin-top: 250px;
+        width: 400px;
     }
 
     .hero .text p {
-        margin-top: 15px;
-        font-size: 16px;
+        margin-top: 15px
     }
 
     #hero-button {
-        width: 220px;
-        height: 55px;
-        font-size: 16px;
+        width: 250px;
         margin-top: 20px;
     }
 
     .hero img {
-        width: 80%;
-        margin: 20px auto;
-        display: block;
-        position: static;
-        right: auto;
-        bottom: auto;
+        width: 300px;
+        position: relative;
+        right: 350px;
+        bottom: 40px;
     }
 
-    .brands img {
-        width: 100%;
-        margin-top: 40px;
+    .brands {
+        width: 500px;
     }
 
     .entry {
         flex-direction: column;
         gap: 20px;
-        margin-top: 80px;
     }
 
     .entry h2 {
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
+        display: inline-flex;
+        justify-content: center;
     }
 
     .entry p {
-        font-size: 16px;
-        text-align: center;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .services {
+        margin-right: -40px;
     }
 
     .blocks-services {
-        justify-content: center;
-        gap: 20px;
+        gap: 10px;
+        margin-right: 0;
+        column-gap: 10px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 100%;
-        max-width: 280px;
-        height: 280px;
+        width: 185px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 20px;
-        left: 20px;
-        top: 30px;
+        font-size: 23px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        width: 90px;
-        left: auto;
-        right: 20px;
-        top: auto;
-        bottom: 20px;
-        margin: 0;
+        margin-top: 70px;
+        margin-left: -130px;
+        width: 100px;
     }
 
-    .blocks-services .line-and-btn {
-        margin-left: 20px;
-        margin-top: 180px;
-    }
-
-    .invitation {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 30px 20px;
-        margin-top: 60px;
-    }
-
-    .invitation .text {
-        width: 100%;
-        text-align: center;
-    }
-
-    .invitation h3 {
-        margin-left: 0;
-        text-align: center;
-        font-size: 22px;
-    }
-
-    .invitation p {
-        margin-left: 0;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    .invitation .text a {
-        margin-left: 0;
-        margin-right: auto;
-        width: 250px;
-        font-size: 16px;
-        height: 55px;
-        padding: 15px;
-    }
-
-    .invitation .img {
-        width: 150px;
-        margin: 20px auto 0;
+    .blocks-services .line-and-btn img {
+        margin-left: -10px;
+        width: 30px;
     }
 
     .invitation img {
-        width: 100%;
-        position: static;
-        right: auto;
-        top: auto;
+        width: 130px;
+        position: relative;
+        right: 60px;
+        top: 15px;
+
+    }
+
+    .invitation {
+        width: 400px;
+        height: auto;
+    }
+
+    .invitation h3 {
+        font-size: 24px;
+    }
+
+    .invitation p {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .invitation .text a {
+        font-size: 17px;
+        width: 300px;
+        margin-bottom: 20px;
     }
 
     .entry-cases {
         flex-direction: column;
-        gap: 15px;
-        margin-top: 60px;
-        text-align: center;
+        gap: 10px;
     }
 
-    .entry-cases h2 {
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        font-size: 22px;
+
+    .case .entry-cases h2 {
+        margin-top: -50px;
+        width: 200px;
+        margin-left: -170px;
     }
 
     .entry-cases p {
-        font-size: 16px;
+        position: relative;
+        top: 10px;
     }
 
     .cases {
+        width: 450px;
         flex-direction: column;
-        width: 100%;
         height: auto;
-        padding: 20px;
-        margin-top: 40px;
+        justify-content: center;
+        align-items: center;
+
+
+
     }
 
-    .one-case,
-    .two-case,
-    .three-case {
-        width: 100% !important;
-        margin: 20px 0 !important;
-        height: auto;
-        text-align: center;
+    .case :is(.one-case, .two-case, .three-case) p {
+        font-size: 17px;
+        width: 300px;
+        height: 100px;
+        margin-top: -40px;
+
+    }
+
+    .case :is(.one-case, .two-case, .three-case) {
+        margin-left: -50px;
+        margin-bottom: -30px;
+    }
+
+    .case :is(.three-case) {
+        margin-bottom: -100px;
+    }
+
+    .case :is(.two-case, .three-case) p {
+        margin-top: -70px;
+    }
+
+
+    .case :is(.three-case) p {
+        margin-top: -100px;
+    }
+
+
+    .case :is(.one-case, .two-case, .three-case) a {
+        top: 38px;
     }
 
     .one-case::after,
     .two-case::after {
-        display: none;
+        height: 1px;
+        width: 300px;
+        top: 110px;
+        left: 5px;
     }
 
-    .case :is(.one-case, .two-case, .three-case) p {
-        font-size: 15px;
-        width: 100%;
-        height: auto;
-        margin: 0 0 15px;
-    }
-
-    .case :is(.one-case, .two-case, .three-case) a {
-        top: 0;
-        font-size: 16px;
+    .two-case::after {
+        margin-top: -30px;
     }
 
     .form {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 30px 20px;
-        margin-top: 60px;
-    }
-
-    .form h3 {
-        font-size: 22px;
-        display: inline-block;
-        margin: 0 auto 20px;
-    }
-
-    #form {
-        width: 100%;
-        padding: 0;
+        margin-top: 100px;
+        margin-left: -5px;
+        width: 400px;
     }
 
     #form input {
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-        height: 45px;
+        height: 40px;
+    }
+
+    #form input::placeholder {
         font-size: 16px;
     }
 
-    .form-img {
-        display: none;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 30px 20px;
-        text-align: center;
+    .form img {
+        position: relative;
+        right: 105px;
+        bottom: 250px;
+        width: 150px;
     }
 
     .footer-content {
-        margin-left: 0;
-        width: 100%;
+        margin-left: 30px;
     }
 
-    footer .description {
-        width: 100%;
-        margin-left: 0;
-    }
 
     footer .description img {
-        width: 130px;
-        margin: 0 auto 20px;
-        display: block;
+        width: 150px;
     }
 
-    footer .description h3 {
-        font-size: 18px;
-    }
-
-    footer .description p {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .footer-nav {
-        margin-top: 20px;
-    }
-
-    .footer-nav nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin: 20px 0;
-    }
-
-    .footer-nav a {
-        margin: 0;
+    .footer-content .description h3 {
         font-size: 16px;
     }
 
-    .footer-img {
-        margin-top: 20px;
-        text-align: center;
+    .footer-content .description p {
+        font-size: 15px;
     }
 
-    .footer-img img {
-        width: 100px;
-        margin: 0 auto;
-        display: block;
+    .footer-content .footer-nav a {
+        font-size: 17px;
     }
+
+    footer .footer-img img {
+        width: 130px;
+        margin-left: -160px;
+    }
+
 }
