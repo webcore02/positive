@@ -514,9 +514,11 @@ nav {
 
 
 @media (max-width: 1024px) {
+
     .container {
         max-width: 1024px;
-        margin: 0 -40px;
+        margin: 0 auto;
+        padding: 0 30px;
     }
 
     header {
@@ -612,6 +614,14 @@ nav {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    
+
     .logo img {
         margin-left: -10px;
         margin-bottom: 30px;
@@ -664,7 +674,7 @@ nav {
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 260px;
+        width: 300px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
@@ -678,8 +688,9 @@ nav {
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        margin-left: -100px;
-        margin-top: 60px;
+        
+        margin-left: -50px;
+        margin-top: 70px;
         width: 120px;
     }
 
@@ -708,6 +719,7 @@ nav {
     .cases {
         width: 700px;
         padding-right: 40px;
+        margin-left: 30px
     }
 
     .cases p {
@@ -728,6 +740,7 @@ nav {
 
     .form {
         width: 600px;
+        margin-left: 80px;
     }
 
     .form h3 {
@@ -735,6 +748,7 @@ nav {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20px;
     }
 
     .form #form-send {
@@ -746,10 +760,19 @@ nav {
     .form ::placeholder {
         font-size: 16px;
     }
+    
+    footer {
+        width: 100%;
+        margin: 50px 0px 0px 0px;
+        box-sizing: border-box;
+
+
+    }
 
 
     .form img {
         width: 250px;
+        margin-bottom: 100px;
     }
 
     .footer-content img {
@@ -775,9 +798,12 @@ nav {
 
 @media (max-width: 480px) {
 
-    body {
-        margin-left: -30px;
-        margin-top: 30px;
+  
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+        padding: 0px;
     }
 
     header .logo img {
@@ -826,8 +852,10 @@ nav {
     }
 
     .brands {
-        width: 450px;
-        margin-left: -20px;
+        width: 480px;
+        position: relative;
+        left: 20px;
+        
     }
 
     .entry {
@@ -838,25 +866,25 @@ nav {
     .entry h2 {
         display: inline-flex;
         justify-content: center;
+        margin-left: -50px;
+        
     }
 
     .entry p {
         font-size: 18px;
-        position: relative;
-    }
+        width: 400px;
 
-    .services {
-        margin-right: -40px;
     }
 
     .blocks-services {
-        gap: 10px;
-        margin-right: 0;
+        width: 400px;
+        gap: 20px;
         column-gap: 10px;
     }
 
+
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 185px;
+        width: 180px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
@@ -911,7 +939,7 @@ nav {
     .case .entry-cases h2 {
         margin-top: -50px;
         width: 200px;
-        margin-left: -170px;
+        margin-left: -280px;
     }
 
     .entry-cases p {
@@ -925,9 +953,7 @@ nav {
         height: auto;
         justify-content: center;
         align-items: center;
-
-
-
+        margin-left: -20px;
     }
 
     .case :is(.one-case, .two-case, .three-case) p {
@@ -975,7 +1001,7 @@ nav {
 
     .form {
         margin-top: 100px;
-        margin-left: -5px;
+        margin-left: 10px;
         width: 400px;
     }
 
@@ -989,13 +1015,14 @@ nav {
 
     .form img {
         position: relative;
-        right: 105px;
-        bottom: 250px;
+        right: 100px;
+        bottom: 200px;
         width: 150px;
     }
 
-    .footer-content {
-        margin-left: 30px;
+
+    footer {
+        width: 100%;
     }
 
 
