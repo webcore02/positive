@@ -513,521 +513,256 @@ nav {
 }
 
 
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 40px;
+@media (max-width: 480px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+        padding: 0px;
+        margin: 0;  /* ← убрал margin-top: 30px */
     }
 
-    header {
-        gap: 40px;
+    header .logo img {
+        width: 150px;
     }
 
-    .nav {
-        width: auto;
-    }
-
-    nav a {
-        font-size: 16px;
-        margin-right: 20px;
-    }
-
-    .hero img {
-        width: 450px;
-    }
-
-    .hero .text h1 {
-        font-size: 50px;
-    }
-
-    .hero .text {
-        width: 50%;
-    }
-
-    .brands img {
-        width: 100%;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: calc(50% - 20px);
-        min-width: 300px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        width: 130px;
-        left: auto;
-        right: 30px;
-        top: auto;
-        bottom: 30px;
-    }
-
-    .invitation {
-        width: 100%;
-        max-width: 900px;
-        padding: 0 40px;
-    }
-
-    .invitation .img {
-        width: 350px;
-        margin-left: 0;
-    }
-
-    .invitation img {
-        width: 100%;
-    }
-
-    .invitation .text {
-        width: 50%;
-    }
-
-    .cases {
-        width: 100%;
-        max-width: 900px;
-    }
-
-    .form {
-        width: 100%;
-        max-width: 900px;
-    }
-
-    .footer-img {
-        margin-top: 120px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 30px;
-    }
-
-    header {
-        flex-wrap: wrap;
-        gap: 20px;
-        height: auto;
-    }
-
-    .logo img {
-        width: 180px;
-    }
-
-    .nav {
-        width: 100%;
+    header .nav {
+        width: 100%;  /* ← было 460px */
+        margin-left: 0;  /* ← было 60px */
+        margin-top: 20px;  /* ← было 50px */
         text-align: center;
     }
 
-    .nav a {
-        font-size: 16px;
-        margin: 0 15px;
+    header .nav a {
+        font-size: 17px;
     }
 
     #header-button {
-        padding: 12px 20px;
-    }
-
-    .hero {
-        flex-wrap: wrap;
-    }
-
-    .hero .text {
-        width: 100%;
+        position: relative;
+        width: 200px;
+        padding: 10px;
+        bottom: 0;  /* ← было 90px */
+        left: 0;  /* ← было 200px */
+        text-align: center;
+        margin-top: 10px;
     }
 
     .hero .text h1 {
-        font-size: 40px;
-    }
-
-    .hero img {
-        width: 400px;
-        margin-top: 30px;
+        font-size: 35px;
+        margin-top: 20px;  /* ← было 250px */
+        width: 100%;  /* ← было 400px */
     }
 
     .hero .text p {
-        font-size: 18px;
+        margin-top: 15px
     }
 
     #hero-button {
-        width: 240px;
-        height: 60px;
-        font-size: 18px;
+        width: 250px;
+        margin-top: 20px;
     }
 
-    .brands img {
-        width: 100%;
+    .hero img {
+        width: 300px;
+        position: relative;
+        right: 0;  /* ← было 350px */
+        bottom: 0;  /* ← было 40px */
+        margin-top: 20px;
+    }
+
+    .brands {
+        width: 100%;  /* ← было 480px */
+        position: relative;
+        left: 0;  /* ← было 20px */
     }
 
     .entry {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 20px;
     }
 
     .entry h2 {
-        font-size: 24px;
-        width: auto;
-        padding: 8px 16px;
+        display: inline-flex;
+        justify-content: center;
+        margin-left: 0;  /* ← было -50px */
     }
 
     .entry p {
-        font-size: 16px;
+        font-size: 18px;
+        width: 100%;  /* ← было 400px */
     }
 
     .blocks-services {
-        gap: 30px;
+        width: 100%;  /* ← было 400px */
+        gap: 20px;
+        column-gap: 10px;
+        justify-content: center;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: calc(50% - 15px);
-        min-width: 280px;
-        height: 300px;
+        width: 180px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 24px;
-        top: 30px;
-        left: 30px;
-        right: auto;
+        font-size: 23px;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
+        margin-top: 70px;
+        margin-left: 0;  /* ← было -130px */
+        right: 20px;
         width: 100px;
-        right: 25px;
-        bottom: 25px;
-        top: auto;
-        left: auto;
+        position: absolute;
     }
 
-    .line-and-btn {
-        margin-top: 200px;
-        margin-left: 30px;
+    .blocks-services .line-and-btn img {
+        margin-left: 0;  /* ← было -10px */
+        width: 30px;
+    }
+
+    .invitation img {
+        width: 130px;
+        position: relative;
+        right: 0;  /* ← было 60px */
+        top: 0;  /* ← было 15px */
     }
 
     .invitation {
-        width: 100%;
-        padding: 30px;
+        width: 100%;  /* ← было 400px */
         height: auto;
-        gap: 20px;
-    }
-
-    .invitation .text {
-        width: 55%;
-    }
-
-    .invitation .img {
-        width: 40%;
-        margin-left: 0;
     }
 
     .invitation h3 {
         font-size: 24px;
-        margin-left: 0;
     }
 
     .invitation p {
-        font-size: 16px;
-        margin-left: 0;
+        font-size: 17px;
+        margin-top: 10px;
     }
 
-    .invitation a {
-        margin-left: 0;
-        width: 280px;
-        height: 55px;
-        font-size: 16px;
-        padding: 15px;
+    .invitation .text a {
+        font-size: 17px;
+        width: 300px;
+        margin-bottom: 20px;
     }
 
     .entry-cases {
-        flex-wrap: wrap;
-        gap: 20px;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .entry-cases h2 {
-        font-size: 24px;
-        width: auto;
-        padding: 8px 20px;
-    }
-
-    .entry-cases p {
-        font-size: 16px;
-    }
-
-    .cases {
-        width: 100%;
-        padding: 20px;
-        height: auto;
-    }
-
-    .one-case,
-    .two-case,
-    .three-case {
-        margin: 20px;
-        width: calc(33.33% - 40px);
-        height: auto;
-    }
-
-    .one-case::after,
-    .two-case::after {
-        right: -20px;
-    }
-
-    :is(.one-case, .two-case, .three-case) p {
-        font-size: 16px;
-        height: auto;
-    }
-
-    .form {
-        width: 100%;
-        padding: 30px;
-        height: auto;
-        gap: 20px;
-    }
-
-    .form-img {
-        width: 250px;
-    }
-
-    #form input {
-        width: 280px;
-        height: 45px;
-        font-size: 16px;
-    }
-
-    .form h3 {
-        font-size: 24px;
-    }
-
-    footer {
-        flex-wrap: wrap;
-        gap: 30px;
-        padding: 40px 20px;
-    }
-
-    footer .description {
-        width: 60%;
-    }
-
-    footer .description p {
-        width: 100%;
-    }
-
-    .footer-img img {
-        width: 150px;
-        margin-top: 0;
-    }
-
-    .footer-nav a {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 20px;
-    }
-
-    header {
-        gap: 15px;
-    }
-
-    .logo img {
-        width: 140px;
-    }
-
-    .nav a {
-        font-size: 14px;
-        margin: 0 10px;
-    }
-
-    #header-button {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    .hero .text h1 {
-        font-size: 28px;
-    }
-
-    .hero img {
-        width: 280px;
-    }
-
-    .hero .text p {
-        font-size: 16px;
-    }
-
-    #hero-button {
+    .case .entry-cases h2 {
+        margin-top: 0;  /* ← было -50px */
         width: 200px;
-        height: 50px;
-        font-size: 14px;
-        padding: 12px;
-    }
-
-    .entry h2 {
-        font-size: 20px;
-    }
-
-    .entry p {
-        font-size: 14px;
-    }
-
-    .blocks-services {
-        gap: 20px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: calc(50% - 10px);
-        min-width: 150px;
-        height: 260px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 18px;
-        top: 20px;
-        left: 15px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        width: 70px;
-        right: 15px;
-        bottom: 15px;
-    }
-
-    .line-and-btn {
-        margin-top: 170px;
-        margin-left: 15px;
-    }
-
-    .line-and-btn a {
-        font-size: 14px;
-    }
-
-    .invitation {
-        flex-direction: column;
-        padding: 25px;
-        text-align: center;
-    }
-
-    .invitation .text {
-        width: 100%;
-    }
-
-    .invitation .img {
-        width: 150px;
-        margin: 20px auto 0;
-    }
-
-    .invitation h3 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .invitation p {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .invitation a {
-        width: 220px;
-        height: 48px;
-        font-size: 14px;
-        margin: 0 auto;
-    }
-
-    .entry-cases h2 {
-        font-size: 20px;
+        margin-left: 0;  /* ← было -280px */
     }
 
     .entry-cases p {
-        font-size: 14px;
+        position: relative;
+        top: 0;  /* ← было 10px */
     }
 
     .cases {
+        width: 100%;  /* ← было 450px */
         flex-direction: column;
-        padding: 15px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;  /* ← было -20px */
     }
 
-    .one-case,
-    .two-case,
-    .three-case {
-        width: 100% !important;
-        margin: 15px 0 !important;
+    .case :is(.one-case, .two-case, .three-case) p {
+        font-size: 17px;
+        width: 300px;
+        height: 100px;
+        margin-top: 0;  /* ← было -40px */
+    }
+
+    .case :is(.one-case, .two-case, .three-case) {
+        margin-left: 0;  /* ← было -50px */
+        margin-bottom: 20px;
+    }
+
+    .case :is(.three-case) {
+        margin-bottom: 20px;  /* ← было -100px */
+    }
+
+    .case :is(.two-case, .three-case) p {
+        margin-top: 0;  /* ← было -70px */
+    }
+
+    .case :is(.three-case) p {
+        margin-top: 0;  /* ← было -100px */
+    }
+
+    .case :is(.one-case, .two-case, .three-case) a {
+        top: 10px;  /* ← было 38px */
     }
 
     .one-case::after,
     .two-case::after {
-        display: none;
+        height: 1px;
+        width: 300px;
+        top: 110px;
+        left: 5px;
     }
 
-    :is(.one-case, .two-case, .three-case) p {
-        font-size: 14px;
-    }
-
-    :is(.one-case, .two-case, .three-case) a {
-        font-size: 14px;
-        top: 10px;
+    .two-case::after {
+        margin-top: 0;  /* ← было -30px */
     }
 
     .form {
-        flex-direction: column;
-        padding: 25px;
-        text-align: center;
-    }
-
-    .form-img {
-        display: none;
+        margin-top: 100px;
+        margin-left: auto;  /* ← было 10px */
+        margin-right: auto;
+        width: 100%;  /* ← было 400px */
     }
 
     #form input {
-        width: 100%;
-        max-width: 260px;
-        height: 42px;
-        font-size: 14px;
+        height: 40px;
     }
 
-    .form h3 {
-        font-size: 20px;
+    #form input::placeholder {
+        font-size: 16px;
     }
 
-    footer {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
-    }
-
-    footer .description {
-        width: 100%;
-        margin: 0;
-    }
-
-    footer .description img {
-        margin: 0 auto 15px;
+    .form img {
+        position: relative;
+        right: 0;  /* ← было 100px */
+        bottom: 0;  /* ← было 200px */
+        width: 150px;
+        margin: 20px auto;
         display: block;
     }
 
-    footer .description h3 {
+    footer {
+        width: 100%;
+    }
+
+    footer .description img {
+        width: 150px;
+    }
+
+    .footer-content {
+        margin-left: 0;  /* ← было 30px */
+    }
+
+    .footer-content .description h3 {
         font-size: 16px;
     }
 
-    footer .description p {
-        font-size: 13px;
+    .footer-content .description p {
+        font-size: 15px;
     }
 
-    .footer-nav nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    .footer-content .footer-nav a {
+        font-size: 17px;
     }
 
-    .footer-nav a {
-        margin: 0;
-        font-size: 14px;
+    footer .footer-img img {
+        width: 130px;
+        margin-left: 0;  /* ← было -160px */
     }
 
-    .footer-img {
-        margin: 0;
-        text-align: center;
-    }
-
-    .footer-img img {
-        width: 100px;
-        margin: 0 auto;
-    }
 }
