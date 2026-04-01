@@ -520,11 +520,12 @@ nav {
 @media (max-width: 1024px) {
 
     .container {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
     header {
-        gap: 50px;
+        gap: 40px;
+        flex-wrap: wrap;
     }
 
     .nav {
@@ -532,9 +533,8 @@ nav {
     }
 
     .hero {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     .hero .text {
@@ -543,8 +543,8 @@ nav {
 
     .hero img {
         width: 100%;
-        max-width: 400px;
-        margin-top: 30px;
+        max-width: 450px;
+        margin: 0 auto;
     }
 
     .blocks-services {
@@ -553,58 +553,40 @@ nav {
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
         width: 100%;
-        max-width: 500px;
+        max-width: 450px;
     }
 
     .invitation {
-        flex-direction: column;
+        width: 100%;
         height: auto;
-        padding: 30px;
+        flex-wrap: wrap;
         gap: 20px;
-        text-align: center;
     }
 
+    .invitation .text,
     .invitation .img {
-        margin-left: 0;
         width: 100%;
-    }
-
-    .invitation .text {
-        width: 100%;
-        align-items: center;
+        margin: 0;
     }
 
     .cases {
-        flex-direction: column;
+        width: 100%;
         height: auto;
-        gap: 30px;
-        padding: 30px;
-    }
-
-    .one-case::after,
-    .two-case::after {
-        display: none;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
     }
 
     .form {
-        flex-direction: column;
-        height: auto;
-        padding: 30px;
-    }
-
-    .form-img {
         width: 100%;
-        max-width: 300px;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 20px;
     }
 
     footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-img img {
-        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 
@@ -615,29 +597,33 @@ nav {
 
 @media (max-width: 768px) {
 
-    .container {
-        padding: 0 20px;
-    }
-
     header {
         flex-direction: column;
-        height: auto;
+        align-items: center;
         gap: 20px;
     }
 
     .nav {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
 
     header a {
-        margin: 10px;
         font-size: 16px;
+        margin: 5px;
+    }
+
+    #header-button {
+        padding: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
     }
 
     .hero .text h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .hero .text p {
@@ -659,35 +645,31 @@ nav {
         margin: 0 auto;
     }
 
-    .entry p {
-        font-size: 16px;
-    }
-
     .blocks-services {
         gap: 20px;
     }
 
     .blocks-services h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .line-and-btn {
         margin: 20px;
     }
 
-    .invitation h3 {
-        font-size: 22px;
-        margin-left: 0;
+    .invitation {
+        padding: 20px;
+        text-align: center;
     }
 
-    .invitation p {
+    .invitation h3,
+    .invitation p,
+    .invitation a {
         margin-left: 0;
-        font-size: 16px;
     }
 
     .invitation a {
         width: 100%;
-        padding: 20px;
     }
 
     .entry-cases {
@@ -696,18 +678,25 @@ nav {
     }
 
     .cases {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     .one-case,
     .two-case,
     .three-case {
-        margin: 0;
         width: 100%;
+        margin: 0;
+    }
+
+    .one-case::after,
+    .two-case::after {
+        display: none;
     }
 
     .form {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
     #form input {
@@ -715,13 +704,21 @@ nav {
     }
 
     .form-img {
-        display: none; /* на телефоне убираем картинку */
+        display: none;
     }
 
-    footer .description {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
         width: 100%;
     }
 
+    .footer-img {
+        margin: 0;
+    }
 }
 
 
@@ -732,7 +729,7 @@ nav {
 @media (max-width: 480px) {
 
     .hero .text h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     header a {
@@ -752,5 +749,4 @@ nav {
     .form h3 {
         font-size: 22px;
     }
-
 }
