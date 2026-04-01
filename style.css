@@ -513,256 +513,244 @@ nav {
 }
 
 
-@media (max-width: 480px) {
+/* ===================== */
+/* 📲 Планшеты (до 1024px) */
+/* ===================== */
 
-    html, body {
-        overflow-x: hidden;
-        max-width: 100%;
-        padding: 0px;
-        margin: 0;  /* ← убрал margin-top: 30px */
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 40px;
     }
 
-    header .logo img {
-        width: 150px;
+    header {
+        gap: 50px;
     }
 
-    header .nav {
-        width: 100%;  /* ← было 460px */
-        margin-left: 0;  /* ← было 60px */
-        margin-top: 20px;  /* ← было 50px */
+    .nav {
+        width: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
-    header .nav a {
-        font-size: 17px;
-    }
-
-    #header-button {
-        position: relative;
-        width: 200px;
-        padding: 10px;
-        bottom: 0;  /* ← было 90px */
-        left: 0;  /* ← было 200px */
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .hero .text h1 {
-        font-size: 35px;
-        margin-top: 20px;  /* ← было 250px */
-        width: 100%;  /* ← было 400px */
-    }
-
-    .hero .text p {
-        margin-top: 15px
-    }
-
-    #hero-button {
-        width: 250px;
-        margin-top: 20px;
+    .hero .text {
+        width: 100%;
     }
 
     .hero img {
-        width: 300px;
-        position: relative;
-        right: 0;  /* ← было 350px */
-        bottom: 0;  /* ← было 40px */
-        margin-top: 20px;
-    }
-
-    .brands {
-        width: 100%;  /* ← было 480px */
-        position: relative;
-        left: 0;  /* ← было 20px */
-    }
-
-    .entry {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .entry h2 {
-        display: inline-flex;
-        justify-content: center;
-        margin-left: 0;  /* ← было -50px */
-    }
-
-    .entry p {
-        font-size: 18px;
-        width: 100%;  /* ← было 400px */
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
     }
 
     .blocks-services {
-        width: 100%;  /* ← было 400px */
-        gap: 20px;
-        column-gap: 10px;
         justify-content: center;
     }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 180px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 23px;
-    }
-
-    .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
-        margin-top: 70px;
-        margin-left: 0;  /* ← было -130px */
-        right: 20px;
-        width: 100px;
-        position: absolute;
-    }
-
-    .blocks-services .line-and-btn img {
-        margin-left: 0;  /* ← было -10px */
-        width: 30px;
-    }
-
-    .invitation img {
-        width: 130px;
-        position: relative;
-        right: 0;  /* ← было 60px */
-        top: 0;  /* ← было 15px */
+        width: 100%;
+        max-width: 500px;
     }
 
     .invitation {
-        width: 100%;  /* ← было 400px */
-        height: auto;
-    }
-
-    .invitation h3 {
-        font-size: 24px;
-    }
-
-    .invitation p {
-        font-size: 17px;
-        margin-top: 10px;
-    }
-
-    .invitation .text a {
-        font-size: 17px;
-        width: 300px;
-        margin-bottom: 20px;
-    }
-
-    .entry-cases {
         flex-direction: column;
-        gap: 10px;
+        height: auto;
+        padding: 30px;
+        gap: 20px;
+        text-align: center;
     }
 
-    .case .entry-cases h2 {
-        margin-top: 0;  /* ← было -50px */
-        width: 200px;
-        margin-left: 0;  /* ← было -280px */
+    .invitation .img {
+        margin-left: 0;
+        width: 100%;
     }
 
-    .entry-cases p {
-        position: relative;
-        top: 0;  /* ← было 10px */
+    .invitation .text {
+        width: 100%;
+        align-items: center;
     }
 
     .cases {
-        width: 100%;  /* ← было 450px */
         flex-direction: column;
         height: auto;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;  /* ← было -20px */
-    }
-
-    .case :is(.one-case, .two-case, .three-case) p {
-        font-size: 17px;
-        width: 300px;
-        height: 100px;
-        margin-top: 0;  /* ← было -40px */
-    }
-
-    .case :is(.one-case, .two-case, .three-case) {
-        margin-left: 0;  /* ← было -50px */
-        margin-bottom: 20px;
-    }
-
-    .case :is(.three-case) {
-        margin-bottom: 20px;  /* ← было -100px */
-    }
-
-    .case :is(.two-case, .three-case) p {
-        margin-top: 0;  /* ← было -70px */
-    }
-
-    .case :is(.three-case) p {
-        margin-top: 0;  /* ← было -100px */
-    }
-
-    .case :is(.one-case, .two-case, .three-case) a {
-        top: 10px;  /* ← было 38px */
+        gap: 30px;
+        padding: 30px;
     }
 
     .one-case::after,
     .two-case::after {
-        height: 1px;
-        width: 300px;
-        top: 110px;
-        left: 5px;
-    }
-
-    .two-case::after {
-        margin-top: 0;  /* ← было -30px */
+        display: none;
     }
 
     .form {
-        margin-top: 100px;
-        margin-left: auto;  /* ← было 10px */
-        margin-right: auto;
-        width: 100%;  /* ← было 400px */
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
     }
 
-    #form input {
-        height: 40px;
-    }
-
-    #form input::placeholder {
-        font-size: 16px;
-    }
-
-    .form img {
-        position: relative;
-        right: 0;  /* ← было 100px */
-        bottom: 0;  /* ← было 200px */
-        width: 150px;
-        margin: 20px auto;
-        display: block;
+    .form-img {
+        width: 100%;
+        max-width: 300px;
     }
 
     footer {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    footer .description img {
-        width: 150px;
+    .footer-img img {
+        margin-top: 20px;
+    }
+}
+
+
+/* ===================== */
+/* 📱 Телефоны (до 768px) */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
     }
 
-    .footer-content {
-        margin-left: 0;  /* ← было 30px */
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
     }
 
-    .footer-content .description h3 {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header a {
+        margin: 10px;
         font-size: 16px;
     }
 
-    .footer-content .description p {
-        font-size: 15px;
+    .hero .text h1 {
+        font-size: 32px;
     }
 
-    .footer-content .footer-nav a {
-        font-size: 17px;
+    .hero .text p {
+        font-size: 16px;
     }
 
-    footer .footer-img img {
-        width: 130px;
-        margin-left: 0;  /* ← было -160px */
+    #hero-button {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .entry {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entry h2 {
+        margin: 0 auto;
+    }
+
+    .entry p {
+        font-size: 16px;
+    }
+
+    .blocks-services {
+        gap: 20px;
+    }
+
+    .blocks-services h3 {
+        font-size: 20px;
+    }
+
+    .line-and-btn {
+        margin: 20px;
+    }
+
+    .invitation h3 {
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    .invitation p {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .invitation a {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .entry-cases {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cases {
+        width: 100%;
+    }
+
+    .one-case,
+    .two-case,
+    .three-case {
+        margin: 0;
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    #form input {
+        width: 100%;
+    }
+
+    .form-img {
+        display: none; /* на телефоне убираем картинку */
+    }
+
+    footer .description {
+        width: 100%;
+    }
+
+}
+
+
+/* ===================== */
+/* 📱 Маленькие телефоны (до 480px) */
+/* ===================== */
+
+@media (max-width: 480px) {
+
+    .hero .text h1 {
+        font-size: 26px;
+    }
+
+    header a {
+        font-size: 14px;
+    }
+
+    .entry h2,
+    .entry-cases h2 {
+        font-size: 20px;
+        height: auto;
+    }
+
+    .blocks-services h3 {
+        font-size: 18px;
+    }
+
+    .form h3 {
+        font-size: 22px;
     }
 
 }
