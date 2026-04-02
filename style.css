@@ -1102,8 +1102,9 @@ nav {
     }
 
     .brands {
-        width: 400px;
+        max-width: 400px;;
         margin-top: -30px;
+        margin-left: -55px;
     }
 
     .entry h2 {
@@ -1122,11 +1123,12 @@ nav {
    }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 150px;
+        width: 180px;
+        margin-left: -3px;
     }
 
      .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) h3 {
-        font-size: 21px;
+        font-size: 22px;
      }
 
      .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .img-services {
@@ -1143,7 +1145,7 @@ nav {
      }
 
      .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) .line-and-btn a {
-        font-size: 17px;
+        font-size: 18px;
      }
 
 
@@ -1162,7 +1164,7 @@ nav {
         width: 100px;
         position: relative;
         right: 70px;
-        top: -70px;
+        top: -60px;
       }
 
       .invitation h3 {
@@ -1191,10 +1193,12 @@ nav {
         max-width: 400px;
         width: 100%;
         margin-left: 0px;
+        margin-top: 45px;
+        padding-left: 10px;
        }
 
        .cases p {
-        font-size: 15px;
+        font-size: 14px;
        }
 
        .cases a {
@@ -1236,11 +1240,12 @@ nav {
 
     .footer-content .description h3 {
         font-size: 17px;
-        width: 300px;
+        max-width: 400px;
     }
 
     .footer-content .description p {
-        width: 300px;
+        max-width: 350px;
+        margin-bottom: -20px;
     }
 
     .footer-content .footer-nav a {
