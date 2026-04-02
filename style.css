@@ -1123,7 +1123,7 @@ nav {
    }
 
     .blocks-services :is(.one-block, .two-block, .three-block, .four-block, .five-block, .six-block) {
-        width: 180px;
+        width: 175px;
         margin-left: -3px;
     }
 
